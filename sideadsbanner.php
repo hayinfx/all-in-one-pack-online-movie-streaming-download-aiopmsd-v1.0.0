@@ -1,0 +1,1 @@
+<?php if($ads=='on'){?><center><?php echo$adscode250x250;?></center><br/><?php }?>

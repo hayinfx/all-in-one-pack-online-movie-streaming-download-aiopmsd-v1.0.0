@@ -1,0 +1,47 @@
+RewriteEngine on
+RewriteBase /
+
+#RewriteRule ^watch/(.*)/(.*)$ watch.php?id=$1&title=$2 [L,QSA] 
+
+RewriteRule ^watch/(.*)/(.*)/$ watch.php?id=$1&title=$2 [L,QSA] 
+ 
+RewriteRule ^genre/(.*)/page/(.*)/$ genre.php?genre=$1&page=$2 [L,QSA] 
+RewriteRule ^genre/(.*)/$ genre.php?genre=$1 [L,QSA]
+
+RewriteRule ^year/(.*)/page/(.*)/$ year.php?year=$1&page=$2 [L,QSA] 
+RewriteRule ^year/(.*)/$ year.php?year=$1 [L,QSA]
+
+RewriteRule ^quality/(.*)/page/(.*)/$ quality.php?quality=$1&page=$2 [L,QSA] 
+RewriteRule ^quality/(.*)/$ quality.php?quality=$1 [L,QSA]
+
+RewriteRule ^country/(.*)/page/(.*)/$ country.php?country=$1&page=$2 [L,QSA] 
+RewriteRule ^country/(.*)/$ country.php?country=$1 [L,QSA]
+
+RewriteRule ^director/(.*)/page/(.*)/$ year.php?director=$1&page=$2 [L,QSA] 
+RewriteRule ^director/(.*)/$ director.php?director=$1 [L,QSA]
+
+RewriteRule ^actor/(.*)/page/(.*)/$ actor.php?actor=$1&page=$2 [L,QSA] 
+RewriteRule ^actor/(.*)/$ actor.php?actor=$1 [L,QSA]
+
+RewriteRule ^page/(.*)/$ index.php?page=$1 [L,QSA] 
+
+RewriteRule ^search/?(.*)$ search.php?search=$1 [L,QSA] 
+
+# Static page
+RewriteRule ^dmca/$ dmca.php [L,QSA] 
+#RewriteRule ^genre/all-genre/$ genre.php [L,QSA] 
+#RewriteRule ^ country/all-country/$ country.php [L,QSA]
+
+RewriteRule ^tv/tvone/$ tvone.php [L,QSA] 
+RewriteRule ^tv/rtv/$ rtv.php [L,QSA] 
+RewriteRule ^tv/transtv/$ transtv.php [L,QSA] 
+
+RewriteRule ^bioskopkeren$ index.php [L,QSA]
+RewriteRule ^layarkaca21$ index.php [L,QSA]
+RewriteRule ^cinemaindo$ index.php [L,QSA]
+RewriteRule ^dewanonton$ index.php [L,QSA]
+RewriteRule ^ganool$ index.php [L,QSA]
+RewriteRule ^Bioskop21$ index.php [L,QSA]
+RewriteRule ^kshowsubindo$ index.php [L,QSA]
+RewriteRule ^drakorindo$ index.php [L,QSA]
+RewriteRule ^nontonanime$ index.php [L,QSA]
